@@ -2,10 +2,13 @@
 title: "Creating a point layer of locations in ArcGIS Pro"
 layout: "home"
 description: "This is a beginner’s guide to creating a point layer in ArcGIS Pro using the latitude and longitude of the locations you wish to display. How to locate coordinates online will be discussed. The first part of this guide will walk you through creating an Excel file of coordinates found in decimal degrees that are set up and ready to be imported into ArcGIS. This guide will then walk you through bringing your data into ArcGIS and creating your point layer on top of a base layer of countries."
-created_date: 2024-02-20
 staff:
     - name: Nick Field
       link: https://library.utoronto.ca/staff/nick-field
+maintainer:
+    - name: Cole White 
+      link: https://library.utoronto.ca/staff/cole-white
+created_date: 2024-02-20
 permalink: "/"  #! Remove this if not the homepage
 ---
 
@@ -21,7 +24,7 @@ For this guide we will be using an Excel table with information for places that 
 
     Once you have created your header row, you can input your data into the cells below. You can even create columns with other sorts of data that you may want to have accessible to you in ArcGIS.
 
-    ![Excel grid showing our end result fully filled in. Columns are: Location, Latitude, Longitude, and Attractions.]({{ "/assets/images/1.png" | relative_url }})
+    <img src='{{ '/assets/images/1.png' | relative_url }}' alt='Excel grid showing our end result fully filled in. columns are: Location, Latitude, Longitude, and Attractions.' title='' width='467' height='173' />
 2. Finding coordinates for sites of interest has never been so easy! Go to Wikipedia, type in the city or area of interest. For the majority of articles about places in Wikipedia the coordinates listed in the top right hand side of the screen with a small globe beside it. Click on the particular coordinates for the site (the word “Coordinates” and the globe will bring you to different places) and you will be linked to GeoHack.
 
     <img src='{{ '/assets/images/2.png' | relative_url }}' alt='A red box surrounding the coordinates section of the webpage ' title='' width='285' height='54' />
@@ -36,7 +39,8 @@ For this guide we will be using an Excel table with information for places that 
 
     The Excel file created for this exercise is composed of destinations that we would love to visit with columns for location data, latitude, longitude, and a brief description of what makes the location special.
 3. Save and close your Excel file as a **.csv** when it is completed and the columns are formatted. Once your Excel table is complete you can move to working in ArcGIS. This guide is designed to complement version ArcGIS Pro 3.2.
-    ![Overview of making sure cell C2 (Longitude column) is set to the Number data type.]({{ "/assets/images/1a.png" | relative_url }})
+
+    <img src='{{ '/assets/images/1a.png' | relative_url }}' alt='overview of making sure that the cell C2's (column longitude) is set to the Number data type' title='' width='835' height='456' />
 4. For a base map, this guide will be using the free-to-download **Countries** vector layers (highlighted red in the image below) from the Natural Earth website: [http://www.naturalearthdata.com/downloads/110m-cultural-vectors/](http://www.naturalearthdata.com/downloads/110m-cultural-vectors/)
 
     Download the Countries data. The data is compressed, so before you can use it you will need to unzip it. If you don’t have any software to unzip files, 7-zip is a great free program that is easy to install. You can find it here: [http://www.7-zip.org/](http://www.7-zip.org/).
@@ -46,9 +50,11 @@ For this guide we will be using an Excel table with information for places that 
 
     It is also incredibly important that you NEVER save work with names that have a space in them or in folders that have names with spaces in them. Keep names to one word or indicate spaces by using an underscore ( \_ ).
 6. Add to your map the Countries data that was retrieved from Natural Earth. To do this go to the **Add Data** button at the top of the screen on the toolbar that is highlighted in red in the image below. Add the Natural Earth unzipped shapefile data; it will have a .shp extension.
-<img src='{{ '/assets/images/image_4.png' | relative_url }}' alt='Adding of the map' title='' width='864' height='356' />
-7. Add your Excel file the same way as you added the Countries data – you will have to select the Excel file and the Sheet that your data is on. For this exercise our data is on the first sheet and the default name given to it is **Sheet1**.
+7. <img src='{{ '/assets/images/image_4.png' | relative_url }}' alt='Adding of the map' title='' width='864' height='356' />
+
+    Add your Excel file the same way as you added the Countries data – you will have to select the Excel file and the Sheet that your data is on. For this exercise our data is on the first sheet and the default name given to it is **Sheet1**.
 8. Once you have added your data you should note that the excel file we just added is under Standalone Tables and is not drawn on the map.
+
     <img src='{{ '/assets/images/image_5.png' | relative_url }}' alt='Downloaded and now inserted map is shown, additionally the PointMap.csv file is there below the tab "Standalone Tables"' title='' width='328' height='331' />
 9. In order to have your Excel data become spatial data in your map you will go to, **Add Data**, **Add XY Point Data**, and from the dropdown menu select the Excel sheet that you have added to ArcGIS already with your data in it. (If the fields do not automatically fill in), select the column labeled **Longitude** to be the **X Field** and that **Latitude** is selected from the dropdown menu for the **Y Field**. The **Z Field** is for Z Values representing elevation or height data that can be used to make three dimensional data. But we won’t worry about that here and we’ll just leave it as **blank**.
 
@@ -81,4 +87,4 @@ For this guide we will be using an Excel table with information for places that 
 
     And you are done transforming an Excel table into a shapefile in ArcGIS that can be reused and queried.
 
-Tools: [ArcGIS Pro](https://mdl.library.utoronto.ca/taxonomy/term/70), [Excel](https://mdl.library.utoronto.ca/tools/excel-0) | Data Format: [Vector](https://mdl.library.utoronto.ca/data-format/vector)
+Tools: [ArcGIS Pro](/taxonomy/term/70), [Excel](/tools/excel-0) | Data Format: [Vector](/data-format/vector)
