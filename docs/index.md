@@ -86,5 +86,3 @@ For this guide we will be using an Excel table with information for places that 
 14. Save your work!
 
     And you are done transforming an Excel table into a shapefile in ArcGIS that can be reused and queried.
-
-Tools: [ArcGIS Pro](/taxonomy/term/70), [Excel](/tools/excel-0) | Data Format: [Vector](/data-format/vector)
