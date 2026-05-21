@@ -63,7 +63,7 @@ For this guide we will be using an Excel table with information for places that 
     <img src='{{ '/assets/images/image_8.png' | relative_url }}' alt='Showing the XY Table to Point GUI and the features input' title='' width='423' height='362' />
 10. ArcGIS will automatically set a **Geographic Coordinate System** and **Projection** for your new layer. This information is based on the coordinate system and projection of your map.
 
-    The Coordinate System and Projection of your map is initially set by the first layer with spatial data added to it. This information for your map can be found in the window that pops up if you double click **Layers** (highlighted in the image below). The Coordinate system and projection can be changed for your map and/or for your layer in several different places. To change the coordinate system and projection just for your layer, you can easily do this at the **Add XY Data** window. But, we won’t need to do this in this example. If you would like more information on changing Coordinate Systems and Projections, please go to this link: [https://mdl.library.utoronto.ca/technology/tutorials/selecting-right-projection](https://mdl.library.utoronto.ca/technology/tutorials/selecting-right-projection).
+    The Coordinate System and Projection of your map is initially set by the first layer with spatial data added to it. This information for your map can be found in the window that pops up if you double click **Layers** (highlighted in the image below). The Coordinate system and projection can be changed for your map and/or for your layer in several different places. To change the coordinate system and projection just for your layer, you can easily do this at the **Add XY Data** window. But, we won’t need to do this in this example. If you would like more information on changing Coordinate Systems and Projections, please go to this link: [https://mdlutoronto.github.io/selecting-right-projection/](https://mdlutoronto.github.io/selecting-right-projection/).
 
     When you have specified the **X Field** (Longitude) and **Y Field** (Latitude) in the **Add XY Data** window, click **Run**. A warning will appear, just click **Run**.
 
@@ -87,4 +87,4 @@ For this guide we will be using an Excel table with information for places that 
 
     And you are done transforming an Excel table into a shapefile in ArcGIS that can be reused and queried.
 
-Tools: [ArcGIS Pro](https://mdlutoronto.github.io/tutorials-search/?tool=ArcGIS+Pro), [Excel](https://mdlutoronto.github.io/tutorials-search/?tool=Excel) | Data Format: [Vector](https://mdlutoronto.github.io/tutorials-search/?dataFormat=Vector)
+**Tools:** [ArcGIS Pro](https://mdlutoronto.github.io/tutorials-search/?tool=ArcGIS+Pro), [Excel](https://mdlutoronto.github.io/tutorials-search/?tool=Excel) \| **Data Format:** [Vector](https://mdlutoronto.github.io/tutorials-search/?dataFormat=Vector)
